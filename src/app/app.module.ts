@@ -10,6 +10,9 @@ import { CarouselComponent } from './home/carousel/carousel.component';
 import { NewsCardComponent } from './home/news-card/news-card.component';
 import { CallForPapersComponent } from './forAuthors/call-for-papers/call-for-papers.component';
 import { KeynoteSpeakersComponent } from './keynote-speakers/keynote-speakers.component';
+import { ImportantDatesComponent } from './forAuthors/important-dates/important-dates.component';
+import { SubmitionGuidLineComponent } from './forAuthors/submition-guid-line/submition-guid-line.component';
+import { CammeraReayPapersComponent } from './forAuthors/cammera-reay-papers/cammera-reay-papers.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { KeynoteSpeakersComponent } from './keynote-speakers/keynote-speakers.co
     CarouselComponent,
     NewsCardComponent,
     CallForPapersComponent,
-    KeynoteSpeakersComponent
+    KeynoteSpeakersComponent,
+    ImportantDatesComponent,
+    SubmitionGuidLineComponent,
+    CammeraReayPapersComponent
   ],
   imports: [
     BrowserModule,
