@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { CarouselComponent } from './home/carousel/carousel.component';
 import { NewsCardComponent } from './home/news-card/news-card.component';
+import { CallForPapersComponent } from './forAuthors/call-for-papers/call-for-papers.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NewsCardComponent } from './home/news-card/news-card.component';
     FooterComponent,
     HomeComponent,
     CarouselComponent,
-    NewsCardComponent
+    NewsCardComponent,
+    CallForPapersComponent,
   ],
   imports: [
     BrowserModule,
