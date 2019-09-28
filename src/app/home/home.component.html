@@ -1,0 +1,106 @@
+<app-carousel></app-carousel>
+<br>
+<h1 class="text-center title">4th International Conference on Information Technology Research</h1>
+<h4 class="text-center">December 11 - December 13, 2019</h4>
+
+<hr>
+<div class="container">
+  <div class="span12 pagination-centered">
+    <br>
+    <div>
+      <h4><small class="text-muted">Welcome to the 4<sup>th</sup> International Confernce on Information Technology
+          Research (ICITR2019) Website!</small></h4>
+      <p>Themed "Bridging Digital Divide through Multidicipliniary Research," the conference will offer threefull days
+        of
+        original paper presentations, tutorials, workshops, keynotes, demonstrations, industry sesions and social events
+        designed to further career opportunities and the in-depth understanding of the latest communications
+        advancements
+        worldwide.
+      </p>
+      <br>
+      <h3 class="subtitle">Organized By</h3>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="container">
+  <div class="span12 pagination-centered">
+    <div class="row">
+      <div id="small-img" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
+        <ul>
+          <li *ngFor="let soposer of organise">
+            <img [src]="soposer" class="img-responsive inline-block" alt="Responsive image" />
+          </li>
+        </ul>
+      </div>
+    </div>
+    <h3 class="subtitle">Technically Co-sponsored By</h3>
+  </div>
+</div>
+<hr>
+<div class="container">
+  <div class="span12 pagination-centered">
+    <div class="row">
+      <div id="small-img" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
+        <ul>
+          <li *ngFor="let soposer of technicalCoSponsers">
+            <img [src]="soposer" class="img-responsive inline-block" alt="Responsive image" />
+          </li>
+        </ul>
+      </div>
+    </div>
+    <h3 class="subtitle">Financially Sponsored By</h3>
+  </div>
+</div>
+<hr>
+<div class="container">
+  <div class="span12 pagination-centered">
+    <div class="row">
+      <div id="small-img" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
+        <ul>
+          <li *ngFor="let soposer of FinanciallySponsers">
+            <img [src]="soposer" class="img-responsive inline-block" alt="Responsive image" />
+          </li>
+        </ul>
+      </div>
+    </div>
+    <h3 class="subtitle">News</h3>
+
+  </div>
+</div>
+
+<hr>
+<div class="container">
+  <div class="span12 pagination-centered">
+    <div class="row">
+      <div id="small-img" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
+        <ul>
+          <li>
+            <app-news-card [news] = "news1"></app-news-card>
+          </li>
+          <li>
+            <app-news-card [news] = "news1"></app-news-card>
+          </li>
+          <li>
+            <app-news-card [news] = "news1"></app-news-card>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="container">
+  <div class="span12 pagination-centered">
+    <div class="row">
+      <div class="col-12">
+        <div>
+            <app-news-card></app-news-card>
+
+        </div>
+          <app-news-card></app-news-card>
+          <app-news-card></app-news-card>
+      </div>
+    </div>
+  </div>
+</div> -->
