@@ -7,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarouselComponent implements OnInit {
   images: Array<string> = [
-    "../../../assets/carousel/1.jpg",
-    "../../../assets/carousel/2.jpg",
-    "../../../assets/carousel/3.jpg",
-    "../../../assets/carousel/4.jpg",
+    "assets/carousel/1.jpg",
+    "assets/carousel/2.jpg",
+    "assets/carousel/3.jpg",
+    "assets/carousel/4.jpg",
 
   ]
   constructor() { }

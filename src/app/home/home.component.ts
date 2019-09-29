@@ -15,14 +15,14 @@ export class HomeComponent implements OnInit {
   ]
 
   organise:Array<String> = [
-    "../../assets/organizeBy/itrulogo.png",
-    "../../assets/organizeBy/logoUoM.png",    
+    "assets/organizeBy/itrulogo.png",
+    "assets/organizeBy/logoUoM.png",    
   ]
 
   technicalCoSponsers:Array<String> = [
-    "../../assets/technicallySponser/IEEE_logo.png",
-    "../../assets/technicallySponser/IEEE_SL_logo.png",   
-    "../../assets/technicallySponser/RA_logo.png",    
+    "assets/technicallySponser/IEEE_logo.png",
+    "assets/technicallySponser/IEEE_SL_logo.png",   
+    "assets/technicallySponser/RA_logo.png",    
 
   ]
 
@@ -32,10 +32,10 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.news1 = new NewsCardModel
     this.news1.Date = "28 SEP 2019"
-    this.news1.Title="News Title"
-    this.news1.Message= `Bootstrap’s grid system uses a series of containers,
-                        rows, and columns to layout and align content. It’s built with flexbox and is fully responsive.
-                        Below is an example and an in-depth look at how the grid comes together.`
+    this.news1.Title="Submission now available!"
+    this.news1.Message= `<p>Submit your paper <a href = 'https://easychair.org/conferences/?conf=icitr2019'>here</a>,
+                         before you submit please read the Author Instructions
+                         </p>`
   }
 
 }

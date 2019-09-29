@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,8 @@ import { KeynoteSpeakersComponent } from './keynote-speakers/keynote-speakers.co
 import { ImportantDatesComponent } from './forAuthors/important-dates/important-dates.component';
 import { SubmitionGuidLineComponent } from './forAuthors/submition-guid-line/submition-guid-line.component';
 import { CammeraReayPapersComponent } from './forAuthors/cammera-reay-papers/cammera-reay-papers.component';
+import { PresenterInformationComponent } from './forAuthors/presenter-information/presenter-information.component';
+import { RegistrationComponent } from './registration/registration.component';
 
 @NgModule({
   declarations: [
@@ -26,13 +29,15 @@ import { CammeraReayPapersComponent } from './forAuthors/cammera-reay-papers/cam
     KeynoteSpeakersComponent,
     ImportantDatesComponent,
     SubmitionGuidLineComponent,
-    CammeraReayPapersComponent
+    CammeraReayPapersComponent,
+    PresenterInformationComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
