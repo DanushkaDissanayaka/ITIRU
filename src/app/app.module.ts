@@ -13,6 +13,7 @@ import { CallForPapersComponent } from './forAuthors/call-for-papers/call-for-pa
 import { ImportantDatesComponent } from './forAuthors/important-dates/important-dates.component';
 import { SubmitionGuidLineComponent } from './forAuthors/submition-guid-line/submition-guid-line.component';
 import { CammeraReayPapersComponent } from './forAuthors/cammera-reay-papers/cammera-reay-papers.component';
+import { CommitteesComponent } from './committees/committees.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { CammeraReayPapersComponent } from './forAuthors/cammera-reay-papers/cam
     KeynoteSpeakersComponent,
     ImportantDatesComponent,
     SubmitionGuidLineComponent,
-    CammeraReayPapersComponent
+    CammeraReayPapersComponent,
+    CommitteesComponent
   ],
   imports: [
     BrowserModule,

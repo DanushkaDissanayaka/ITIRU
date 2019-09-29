@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { ImportantDatesComponent } from './forAuthors/important-dates/important-dates.component';
 import { SubmitionGuidLineComponent } from './forAuthors/submition-guid-line/submition-guid-line.component';
 import { CammeraReayPapersComponent } from './forAuthors/cammera-reay-papers/cammera-reay-papers.component';
+import {CommitteesComponent} from './committees/committees.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,14 @@ const routes: Routes = [
   {
     path: 'cammera-reay-papers',
     component: CammeraReayPapersComponent
+  },
+  {
+    path: 'keynote-speakers',
+    component: KeynoteSpeakersComponent
+  },
+  {
+    path: 'committees',
+    component: CommitteesComponent
   }
 ];
 

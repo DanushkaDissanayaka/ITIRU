@@ -10,10 +10,10 @@
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Keynote</a>
+        <a class="nav-link" [routerLink]="['keynote-speakers']">Keynote</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Committees</a>
+        <a class="nav-link" [routerLink]="['committees']">Committees</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -35,8 +35,17 @@
       <li class="nav-item">
         <a class="nav-link" href="#">Registration</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Accommodation/ Travel</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown_2" role="button" data-toggle="dropdown"
+           aria-haspopup="true" aria-expanded="false">
+          Accommodation/ Travel
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown_2">
+          <a  [routerLink]="['callForPapers']" class="dropdown-item">Venue</a>
+          <a  [routerLink]="['important-dates']"class="dropdown-item" href="#">Travel</a>
+          <div class="dropdown-divider"></div>
+          <a [routerLink]="['Author_instructions']" class="dropdown-item" href="#">Accommodation</a>
+        </div>
       </li>
     </ul>
     <ul class="navbar-nav ml-auto">
