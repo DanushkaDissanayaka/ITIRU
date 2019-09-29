@@ -1,5 +1,5 @@
 class RegisterPriceModel {
-    public discription
-    public nonIEEEMember
-    public IEEEMember
+    public discription:string
+    public nonIEEEMember:string
+    public IEEEMember:string
 }

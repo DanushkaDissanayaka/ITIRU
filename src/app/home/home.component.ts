@@ -10,7 +10,7 @@ import { getLocaleEraNames } from '@angular/common';
 export class HomeComponent implements OnInit {
 
   FinanciallySponsers:Array<String> = [
-    "../../assets/financialSponsers/ifs.jpg",
+    "assets/financialSponsers/ifs.jpg",
 
   ]
 

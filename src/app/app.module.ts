@@ -17,6 +17,8 @@ import { CammeraReayPapersComponent } from './forAuthors/cammera-reay-papers/cam
 import { PresenterInformationComponent } from './forAuthors/presenter-information/presenter-information.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { CommitteesComponent } from './committees/committees.component';
+import { AbstractComponent } from './keynote-speakers/abstract/abstract.component';
+import { ProgramComponent } from './program/program.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { CommitteesComponent } from './committees/committees.component';
     CammeraReayPapersComponent,
     PresenterInformationComponent,
     RegistrationComponent,
-    CommitteesComponent
+    CommitteesComponent,
+    AbstractComponent,
+    ProgramComponent
   ],
   imports: [
     BrowserModule,

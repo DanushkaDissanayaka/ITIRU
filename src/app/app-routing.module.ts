@@ -10,6 +10,10 @@ import { PresenterInformationComponent } from './forAuthors/presenter-informatio
 import { RegistrationComponent } from './registration/registration.component';
 
 import { CommitteesComponent } from './committees/committees.component';
+import { AbstractComponent } from './keynote-speakers/abstract/abstract.component';
+import { ProgramComponent } from './program/program.component';
+
+
 
 const routes: Routes = [
   {
@@ -47,6 +51,14 @@ const routes: Routes = [
   {
     path: 'committees',
     component: CommitteesComponent
+  },
+  {
+    path: 'abstract-keynote',
+    component: AbstractComponent
+  },
+  {
+    path: 'program',
+    component: ProgramComponent
   }
 ];
 
