@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { KeynoteSpeakersComponent } from './keynote-speakers/keynote-speakers.component';
 import { CallForPapersComponent } from './forAuthors/call-for-papers/call-for-papers.component';
 import { HomeComponent } from './home/home.component';
 import { ImportantDatesComponent } from './forAuthors/important-dates/important-dates.component';
@@ -8,6 +9,7 @@ import { CammeraReayPapersComponent } from './forAuthors/cammera-reay-papers/cam
 import { PresenterInformationComponent } from './forAuthors/presenter-information/presenter-information.component';
 import { RegistrationComponent } from './registration/registration.component';
 
+import { CommitteesComponent } from './committees/committees.component';
 
 const routes: Routes = [
   {
@@ -38,6 +40,14 @@ const routes: Routes = [
     path: 'registration',
     component: RegistrationComponent
   },
+  {
+    path: 'keynote-speakers',
+    component: KeynoteSpeakersComponent
+  },
+  {
+    path: 'committees',
+    component: CommitteesComponent
+  }
 ];
 
 @NgModule({
