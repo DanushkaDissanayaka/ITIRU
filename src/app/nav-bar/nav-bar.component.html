@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
   <a class="navbar-brand" href="#">ICTR2019</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,11 +21,11 @@
           For Authors
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Call For Papers</a>
-          <a class="dropdown-item" href="#">Important Dates</a>
+          <a  [routerLink]="['callForPapers']" class="dropdown-item">Call For Papers</a>
+          <a  [routerLink]="['important-dates']"class="dropdown-item" href="#">Important Dates</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Author Instructions</a>
-          <a class="dropdown-item" href="#">Camera Ready Paper Instructions</a>
+          <a [routerLink]="['Author_instructions']" class="dropdown-item" href="#">Author Instructions</a>
+          <a [routerLink]="['cammera-reay-papers']"class="dropdown-item" href="#">Camera Ready Paper Instructions</a>
           <a class="dropdown-item" href="#">Presenter Information</a>
         </div>
       </li>
@@ -40,9 +40,6 @@
       </li>
     </ul>
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
-      </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Contact Us</a>
       </li>

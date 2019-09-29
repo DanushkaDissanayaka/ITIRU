@@ -1,0 +1,30 @@
+.row li {
+  width: 33.3%;
+  float: left;
+}
+
+img {
+  border: 0 none;
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li img {
+  max-height: 110px;
+  height: 30%;
+  width: auto;
+  margin-top: 15px;
+  margin-bottom: 40px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.card-deck .card {
+  max-width: calc(25% - 30px);
+}
