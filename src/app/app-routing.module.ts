@@ -12,6 +12,12 @@ import { RegistrationComponent } from './registration/registration.component';
 import { CommitteesComponent } from './committees/committees.component';
 import { AbstractComponent } from './keynote-speakers/abstract/abstract.component';
 import { ProgramComponent } from './program/program.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import {Abstract2Component} from './keynote-speakers/abstract2/abstract2.component';
+import {AccommodationOrTravelComponent} from './accommodation-or-travel/accommodation-or-travel.component';
+import {AccommodationComponent} from './accommodation-or-travel/accommodation/accommodation.component';
+import {TravelComponent} from './accommodation-or-travel/travel/travel.component';
+
 
 
 
@@ -57,8 +63,28 @@ const routes: Routes = [
     component: AbstractComponent
   },
   {
+    path: 'abstract-keynote2',
+    component: Abstract2Component
+  },
+  {
     path: 'program',
     component: ProgramComponent
+  },
+  {
+    path: 'contact-us',
+    component: ContactUsComponent
+  },
+  {
+    path: 'accommodation-or-travel',
+    component: AccommodationOrTravelComponent
+  },
+  {
+    path: 'travel',
+    component: TravelComponent
+  },
+  {
+    path: 'accommodation',
+    component: AccommodationComponent
   }
 ];
 

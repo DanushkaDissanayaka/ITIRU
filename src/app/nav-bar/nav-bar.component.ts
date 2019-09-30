@@ -9,7 +9,13 @@ export class NavBarComponent implements OnInit {
 
   constructor() { }
 
+  activeId:number = 0;
+
   ngOnInit() {
+  }
+
+  routerActive(id:number){
+    this.activeId = id;
   }
 
 }

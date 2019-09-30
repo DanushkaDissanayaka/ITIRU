@@ -6,51 +6,57 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" [routerLink]="['']" href="#">Home <span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+        <a class="nav-link" (click)="routerActive(0)" [ngClass]="activeId == 0 ? 'active' : ''"
+          [routerLink]="['/']">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['keynote-speakers']">Keynote</a>
+        <a class="nav-link" (click)="routerActive(1)" [routerLinkActive]="['active']"
+          [routerLink]="['keynote-speakers']">Keynote</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['committees']">Committees</a>
+        <a class="nav-link" (click)="routerActive(1)" [routerLinkActive]="['active']"
+          [routerLink]="['committees']">Committees</a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
+
+      <li class="nav-item dropdown" (click)="routerActive(2)" [ngClass]="activeId == 2 ? 'active' : ''">
+        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false" href="#">
           For Authors
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a  [routerLink]="['callForPapers']" class="dropdown-item">Call For Papers</a>
-          <a  [routerLink]="['important-dates']"class="dropdown-item" href="#">Important Dates</a>
+          <a [routerLink]="['callForPapers']" class="dropdown-item" href="#">Call For Papers</a>
+          <a [routerLink]="['important-dates']" class="dropdown-item" href="#">Important Dates</a>
           <div class="dropdown-divider"></div>
           <a [routerLink]="['Author_instructions']" class="dropdown-item" href="#">Author Instructions</a>
-          <a [routerLink]="['cammera-reay-papers']"class="dropdown-item" href="#">Camera Ready Paper Instructions</a>
+          <a [routerLink]="['cammera-reay-papers']" class="dropdown-item" href="#">Camera Ready Paper Instructions</a>
           <a [routerLink]="['Presenter-information']" class="dropdown-item" href="#">Presenter Information</a>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#" [routerLink]="['program']">Program</a>
+      <li class="nav-item" (click)="routerActive(1)">
+        <a class="nav-link" href="#" [routerLinkActive]="['active']" [routerLink]="['program']">Program</a>
       </li>
       <li class="nav-item">
-        <a [routerLink]="['registration']" class="nav-link" href="#">Registration</a>
+        <a (click)="routerActive(1)" [routerLinkActive]="['active']" [routerLink]="['registration']" class="nav-link"
+          href="#">Registration</a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown_2" role="button" data-toggle="dropdown"
-           aria-haspopup="true" aria-expanded="false">
+      <li (click)="routerActive(3)" [ngClass]="activeId == 3 ? 'active' : ''" class="nav-item dropdown"
+        [routerLinkActive]="['nav-active']" [routerLinkActiveOptions]="{ exact: true }">
+        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown_2" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
           Accommodation/ Travel
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown_2">
-          <a  [routerLink]="['callForPapers']" class="dropdown-item">Venue</a>
-          <a  [routerLink]="['important-dates']"class="dropdown-item" href="#">Travel</a>
+          <a [routerLink]="['accommodation-or-travel']" class="dropdown-item">Venue</a>
+          <a [routerLink]="['travel']" class="dropdown-item">Travel</a>
           <div class="dropdown-divider"></div>
-          <a [routerLink]="['Author_instructions']" class="dropdown-item" href="#">Accommodation</a>
+          <a [routerLink]="['accommodation']" class="dropdown-item">Accommodation</a>
         </div>
       </li>
     </ul>
-    <ul class="navbar-nav ml-auto">
+    <ul class="navbar-nav ml-auto" [routerLinkActive]="['nav-active']">
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact Us</a>
+        <a [routerLinkActive]="['active']" [routerLink]="['contact-us']" class="nav-link" href="#">Contact Us</a>
       </li>
     </ul>
   </div>
