@@ -7,12 +7,28 @@
   <hr>
 
   <div class="container">
+    <p>
+      The ICITR 2109 is soliciting technical papers for oral presentations at its 4th International Conference on
+      Information Technology Research. It provides all researches the presenters and participants with a great
+      opportunity to present and discuss the latest accomplishments, challenges, and future directions in the field and
+      allied fields. The authors are invited to submit their full papers to ICITR2019. The submissions will be
+      peer-reviewed for originality and scientific quality.
+
+    </p>
+    <p>
+      ICITR2018 Main Tracks (but not limited to)
+    </p>
     <div class="span12 pagination-centered">
-      <ul style="list-style-type: disc;">
-        <li>One</li>
-        <li>One</li>
-        <li>One</li>
-      </ul>
+      <div class="row">
+        <div id="small-img" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
+          <ul>
+              <li class="listItemInline" *ngFor = "let item of topicLists; let i = index">{{i+1}}. {{item}}</li>
+          </ul>
+        </div>
+      </div>
+      <!-- <ul style="list-style-type: disc;">
+        <li class="listItemInline" *ngFor = "let item of topicLists">{{item}}</li>        
+      </ul> -->
     </div>
   </div>
 </div>

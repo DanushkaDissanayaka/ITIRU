@@ -19,6 +19,7 @@ import { RegistrationComponent } from './registration/registration.component';
 import { CommitteesComponent } from './committees/committees.component';
 import { AbstractComponent } from './keynote-speakers/abstract/abstract.component';
 import { ProgramComponent } from './program/program.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -38,13 +39,15 @@ import { ProgramComponent } from './program/program.component';
     RegistrationComponent,
     CommitteesComponent,
     AbstractComponent,
-    ProgramComponent
+    ProgramComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+  // providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

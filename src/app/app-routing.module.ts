@@ -12,6 +12,8 @@ import { RegistrationComponent } from './registration/registration.component';
 import { CommitteesComponent } from './committees/committees.component';
 import { AbstractComponent } from './keynote-speakers/abstract/abstract.component';
 import { ProgramComponent } from './program/program.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+
 
 
 
@@ -59,6 +61,10 @@ const routes: Routes = [
   {
     path: 'program',
     component: ProgramComponent
+  },
+  {
+    path: 'contact-us',
+    component: ContactUsComponent
   }
 ];
 
