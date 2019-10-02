@@ -1,6 +1,9 @@
+
+@import '~material-design-icons/iconfont/material-icons.css';
 /* You can add global styles to this file, and also import other style files */
 hr{
     width:60%;
+    margin-top: 0;
 }
 
 .title{
@@ -8,7 +11,9 @@ hr{
 }
 .subtitle{
     font-family:Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
-    font-size: 20px;
+    font-size: 25px;
+    margin-bottom: 0;
+    padding-bottom: 0
 }
 
 .paraTitle{
@@ -25,3 +30,9 @@ body{
 .mainContainer{
     margin-top: 3%
 }
+
+
+.inline-icon {
+    vertical-align: bottom;
+    font-size: 25px !important;
+ }
