@@ -54,8 +54,8 @@ import { AccommodationComponent } from './accommodation-or-travel/accommodation/
     BrowserModule,
     AppRoutingModule
   ],
-  // providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+  // providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
