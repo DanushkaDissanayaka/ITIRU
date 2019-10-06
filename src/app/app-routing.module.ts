@@ -75,7 +75,7 @@ const routes: Routes = [
     component: ContactUsComponent
   },
   {
-    path: 'accommodation-or-travel',
+    path: 'venue',
     component: AccommodationOrTravelComponent
   },
   {

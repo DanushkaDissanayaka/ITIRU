@@ -9,32 +9,33 @@ import { getLocaleEraNames } from '@angular/common';
 })
 export class HomeComponent implements OnInit {
 
-  FinanciallySponsers:Array<String> = [
+  FinanciallySponsers: Array<String> = [
     "assets/financialSponsers/ifs.jpg",
 
   ]
 
-  organise:Array<String> = [
+  organise: Array<String> = [
     "assets/organizeBy/itrulogo.png",
-    "assets/organizeBy/logoUoM.png",    
+    "assets/organizeBy/logoUoM.png",
   ]
 
-  technicalCoSponsers:Array<String> = [
+  technicalCoSponsers: Array<String> = [
     "assets/technicallySponser/IEEE_logo.png",
-    "assets/technicallySponser/IEEE_SL_logo.png",   
-    "assets/technicallySponser/RA_logo.png",    
+    "assets/technicallySponser/IEEE_SL_logo.png",
+    "assets/technicallySponser/RA_logo.png",
 
   ]
 
-  news1:NewsCardModel;
+  news1: NewsCardModel;
   constructor() { }
 
   ngOnInit() {
     this.news1 = new NewsCardModel
     this.news1.Date = "28 SEP 2019"
-    this.news1.Title="Submission now available!"
-    this.news1.Message= `<p>Submit your paper <a href = 'https://easychair.org/conferences/?conf=icitr2019'>here</a>,
-                         before you submit please read the Author Instructions
+    this.news1.Title = "Submission now available!"
+    this.news1.Message = `<p>Submit your paper <a href = 'https://easychair.org/conferences/?conf=icitr2019'>here</a>,
+                         before you submit please read the Author Instructions. <br>
+                         Submition due on 20<sup>th</sup> Octomber 2019.
                          </p>`
   }
 
