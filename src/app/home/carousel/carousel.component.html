@@ -4,13 +4,20 @@
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+
   </ol>
   <div class="carousel-inner carouselHightControl">
     <div *ngFor="let image of images let i = index" [ngClass]="{'active' : i == 0}" class="carousel-item active">
       <img class="d-block w-100" [src]="image" alt="First slide">
     </div>
     <div class="carousel-caption d-none d-md-block">
-      <p></p>
+      <!-- <p class="display-4" style="margin: 10px"> ICITR2019</p> -->
+      <p class="lead" style="margin-bottom: 20px; font-size: 35px">"Bridging Digital Divide through Multidicipliniary Research"</p>
+      <h5>10, 12 - 13 December, 2019</h5>
+      <h5>University Of Moratuwa</h5>
+      <h5>Sri Lanka</h5>
+
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

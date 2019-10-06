@@ -11,6 +11,8 @@ export class CarouselComponent implements OnInit {
     "assets/carousel/2.jpg",
     "assets/carousel/3.jpg",
     "assets/carousel/4.jpg",
+    "assets/carousel/5.jpg",
+
 
   ]
   constructor() { }
