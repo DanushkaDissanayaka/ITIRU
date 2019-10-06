@@ -17,6 +17,8 @@ import {Abstract2Component} from './keynote-speakers/abstract2/abstract2.compone
 import {AccommodationOrTravelComponent} from './accommodation-or-travel/accommodation-or-travel.component';
 import {AccommodationComponent} from './accommodation-or-travel/accommodation/accommodation.component';
 import {TravelComponent} from './accommodation-or-travel/travel/travel.component';
+import {Workshop1Component} from './workshop/workshop1/workshop1.component';
+import {Workshop2Component} from './workshop/workshop2/workshop2.component';
 
 
 
@@ -85,6 +87,14 @@ const routes: Routes = [
   {
     path: 'accommodation',
     component: AccommodationComponent
+  },
+  {
+    path: 'workshop1',
+    component: Workshop1Component
+  },
+  {
+    path: 'workshop2',
+    component: Workshop2Component
   }
 ];
 

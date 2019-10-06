@@ -40,6 +40,16 @@
         <a (click)="routerActive(1)" [routerLinkActive]="['active']" [routerLink]="['registration']" class="nav-link"
           href="#">Registration</a>
       </li>
+      <li class="nav-item dropdown" (click)="routerActive(2)" [ngClass]="activeId == 2 ? 'active' : ''">
+        <a class="nav-link dropdown-toggle" id="navbarDropdown1" role="button" data-toggle="dropdown"
+           aria-haspopup="true" aria-expanded="false" href="#">
+          Workshop
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+          <a [routerLink]="['workshop1']" class="dropdown-item" href="#">Workshop1</a>
+          <a [routerLink]="['workshop2']" class="dropdown-item" href="#">Workshop2</a>
+        </div>
+      </li>
       <li (click)="routerActive(3)" [ngClass]="activeId == 3 ? 'active' : ''" class="nav-item dropdown"
         [routerLinkActive]="['nav-active']" [routerLinkActiveOptions]="{ exact: true }">
         <a class="nav-link dropdown-toggle" href="" id="navbarDropdown_2" role="button" data-toggle="dropdown"

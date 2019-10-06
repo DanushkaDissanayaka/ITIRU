@@ -24,6 +24,9 @@ import { Abstract2Component } from './keynote-speakers/abstract2/abstract2.compo
 import { AccommodationOrTravelComponent } from './accommodation-or-travel/accommodation-or-travel.component';
 import { TravelComponent } from './accommodation-or-travel/travel/travel.component';
 import { AccommodationComponent } from './accommodation-or-travel/accommodation/accommodation.component';
+import { WorkshopComponent } from './workshop/workshop.component';
+import { Workshop1Component } from './workshop/workshop1/workshop1.component';
+import { Workshop2Component } from './workshop/workshop2/workshop2.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +51,10 @@ import { AccommodationComponent } from './accommodation-or-travel/accommodation/
     Abstract2Component,
     AccommodationOrTravelComponent,
     TravelComponent,
-    AccommodationComponent
+    AccommodationComponent,
+    WorkshopComponent,
+    Workshop1Component,
+    Workshop2Component
   ],
   imports: [
     BrowserModule,
