@@ -1,122 +1,120 @@
 <div class="container">
-  <div class="span12 pagination-centered">
-    <div>
-      <header class="jumbotron my-4">
-        <h1 class="display-3">Registration</h1>
-<!--        <p class="lead">submission now available. before submit please read <a-->
-<!--            [routerLink]="['/Author_instructions']">Author Instructions</a></p>-->
-<!--        <a href="https://easychair.org/conferences/?conf=icitr2019" class="btn btn-primary btn-lg">Submit</a>-->
-        <div class="container">
-          <div class="span12 pagination-centered">
-            <p>Will be available soon..</p>
-          </div>
+    <div class="span12 pagination-centered">
+        <div>
+            <header class="jumbotron my-4">
+                <h1 class="display-3">Registration</h1>
+                <!--        <p class="lead">submission now available. before submit please read <a-->
+                <!--            [routerLink]="['/Author_instructions']">Author Instructions</a></p>-->
+                <!--        <a href="https://easychair.org/conferences/?conf=icitr2019" class="btn btn-primary btn-lg">Submit</a>-->
+                <div class="container">
+                    <div class="span12 pagination-centered">
+                        <p>Will be available soon..</p>
+                    </div>
+                </div>
+            </header>
         </div>
-      </header>
     </div>
-  </div>
 </div>
 <hr>
 <div class="container">
-  <div class="span12 pagination-centered">
-    <div class="row">
-      <div id="small-img" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
-        <div>
-          <br>
-          <h4>Conference Charges for Local Affiliations</h4>
-          <table class="table table-bordered  table-striped">
-            <thead>
-              <tr>
-                <th scope="col">Description</th>
-                <th scope="col">IEEE Member (LKR)</th>
-                <th scope="col">Non-IEEE Member (LKR)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr *ngFor="let item of localPrice">
-                <td>{{item.discription}}</td>
-                <td class="text-center title">{{item.nonIEEEMember}}</td>
-                <td class="text-center title">{{item.IEEEMember}}</td>
-              </tr>
-              <tr *ngFor="let item of localPriceCommon">
-                <td>{{item.discription}}</td>
-                <td colspan="2" class="text-center title">{{item.price}}</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div>
-          <br>
-          <h4>Conference Charges for Foreign Affiliations</h4>
-          <table class="table table-bordered  table-striped">
-            <thead>
-              <tr>
-                <th scope="col">Description</th>
-                <th scope="col">IEEE Member (USD)</th>
-                <th scope="col">Non-IEEE Member (USD)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr *ngFor="let item of foreignPrice">
-                <td>{{item.discription}}</td>
-                <td class="text-center title">{{item.nonIEEEMember}}</td>
-                <td class="text-center title">{{item.IEEEMember}}</td>
-              </tr>
-              <tr *ngFor="let item of foreignPriceCommon">
-                <td>{{item.discription}}</td>
-                <td colspan="2" class="text-center title">{{item.price}}</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div>
-          <ul>
-            <li>
-              Students must present their Student ID and IEEE Membership at the Registration Desk.
-            </li>
-            <li>
-              All registrations include Keynotes, Conference Proceedings, and Conference Pack.
+    <div class="span12 pagination-centered">
+        <div class="row">
+            <div id="small-img" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
+                <div>
+                    <br>
+                    <h4>Conference Charges for Local Affiliations</h4>
+                    <table class="table table-bordered  table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Description</th>
+                                <th scope="col">IEEE Member (LKR)</th>
+                                <th scope="col">Non-IEEE Member (LKR)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let item of localPrice">
+                                <td>{{item.discription}}</td>
+                                <td class="text-center title">{{item.nonIEEEMember}}</td>
+                                <td class="text-center title">{{item.IEEEMember}}</td>
+                            </tr>
+                            <tr *ngFor="let item of localPriceCommon">
+                                <td>{{item.discription}}</td>
+                                <td colspan="2" class="text-center title">{{item.price}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <br>
+                    <h4>Conference Charges for Foreign Affiliations</h4>
+                    <table class="table table-bordered  table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Description</th>
+                                <th scope="col">IEEE Member (USD)</th>
+                                <th scope="col">Non-IEEE Member (USD)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let item of foreignPrice">
+                                <td>{{item.discription}}</td>
+                                <td class="text-center title">{{item.nonIEEEMember}}</td>
+                                <td class="text-center title">{{item.IEEEMember}}</td>
+                            </tr>
+                            <tr *ngFor="let item of foreignPriceCommon">
+                                <td>{{item.discription}}</td>
+                                <td colspan="2" class="text-center title">{{item.price}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            Students must present their Student ID and IEEE Membership at the Registration Desk.
+                        </li>
+                        <li>
+                            All registrations include Keynotes, Conference Proceedings, and Conference Pack.
 
-            </li>
-            <li>
-              The payments could be made using one of the following options: Local Authors
-              <ul>
-                <li>
-                  Option 1: To Shroff counter of the University of Moratuwa. Counter is open on weekdays from 9.00 am -
-                  12.30 pm and 1.30 pm - 3.00 pm.
-                </li>
-                <li>
-                  Option 2: You may also pay to any Bank of Ceylon branch. Use following details:
-                  <ul>
-                    <li>
-                      A/C No – 70993353
-                    </li>
-                    <li>
-                      A/C Name – University of Moratuwa
-                    </li>
-                    <li>
-                      Branch – Katubedda
-                    </li>
-                    <li>
-                      Clearly indicate your Name and Telephone number. Use “ICITR 2019” as reason/memo for payment.
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  Option 3: Cheque written in favor of “The Vice Chancellor, University of Moratuwa”
-                </li>
-              </ul>
-            </li>
-            <li>
-              Please e-mail proof of payment to icitr@uom.lk including paper ID and Title or handover to ITRU office
-              (Dilruk), University of Moratuwa.
-            </li>
-            <li>
-              An invoice can be issued on request. Please contact us using conference e-mail with paper ID and Title.
+                        </li>
+                        <li>
+                            The payments could be made using one of the following options: Local Authors
+                            <ul>
+                                <li>
+                                    Option 1: To Shroff counter of the University of Moratuwa. Counter is open on weekdays from 9.00 am - 12.30 pm and 1.30 pm - 3.00 pm.
+                                </li>
+                                <li>
+                                    Option 2: You may also pay to any Bank of Ceylon branch. Use following details:
+                                    <ul>
+                                        <li>
+                                            A/C No – 70993353
+                                        </li>
+                                        <li>
+                                            A/C Name – University of Moratuwa
+                                        </li>
+                                        <li>
+                                            Branch – Katubedda
+                                        </li>
+                                        <li>
+                                            Clearly indicate your Name and Telephone number. Use “ICITR 2019” as reason/memo for payment.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Option 3: Cheque written in favor of “The Vice Chancellor, University of Moratuwa”
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Please e-mail proof of payment to icitr@uom.lk including paper ID and Title or handover to ITRU office (Dilruk), University of Moratuwa.
+                        </li>
+                        <li>
+                            An invoice can be issued on request. Please contact us using conference e-mail with paper ID and Title.
 
-            </li>
-          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </div>
