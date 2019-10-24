@@ -32,10 +32,10 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.news1 = new NewsCardModel
     this.news1.Date = "28 SEP 2019"
-    this.news1.Title = "Paper Submission is now Open!"
+    this.news1.Title = "Submission is now open"
     this.news1.Message = `<p>Submit your paper <a href = 'https://easychair.org/conferences/?conf=icitr2019'>here</a>,
                          before you submit please read the Author Instructions. <br>
-                         Submition due on 20<sup>th</sup> October 2019.
+                         Submission is due on 27<sup>th</sup> October 2019.
                          </p>`
   }
 
