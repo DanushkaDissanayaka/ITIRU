@@ -35,7 +35,7 @@ export class HomeComponent implements OnInit {
     this.news1.Title = "Submission is now open"
     this.news1.Message = `<p>Submit your paper <a href = 'https://easychair.org/conferences/?conf=icitr2019'>here</a>,
                          before you submit please read the Author Instructions. <br>
-                         Submission is due on 27<sup>th</sup> October 2019.
+                         Submission is due on 31<sup>th</sup> October 2019.
                          </p>`
   }
 
