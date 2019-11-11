@@ -27,6 +27,7 @@ export class HomeComponent implements OnInit {
   ]
 
   news1: NewsCardModel;
+  news2: NewsCardModel;
   constructor() { }
 
   ngOnInit() {
@@ -34,6 +35,14 @@ export class HomeComponent implements OnInit {
     this.news1.Date = "08 Nov 2019"
     this.news1.Title = "Submission is now open"
     this.news1.Message = `<p>Submit your paper <a href = 'https://easychair.org/conferences/?conf=icitr2019'>here</a>,
+                         before you submit please read the Author Instructions. <br>
+                         Submission is due on 15<sup>th</sup>November 2019.
+                         </p>`
+
+    this.news2 = new NewsCardModel
+    this.news2.Date = "11 Nov 2019"
+    this.news2.Title = "Detailed Program"
+    this.news2.Message = `<p>Detailed Program available at <a href = 'https://easychair.org/conferences/?conf=icitr2019'>here</a>,
                          before you submit please read the Author Instructions. <br>
                          Submission is due on 15<sup>th</sup>November 2019.
                          </p>`

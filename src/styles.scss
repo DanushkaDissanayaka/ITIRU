@@ -1,38 +1,42 @@
-
 @import '~material-design-icons/iconfont/material-icons.css';
+
 /* You can add global styles to this file, and also import other style files */
-hr{
-    width:60%;
+
+hr {
+    width: 60%;
     margin-top: 0;
 }
 
-.title{
+.title {
     font-family: Arial Narrow, sans-serif;
 }
-.subtitle{
-    font-family:Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
-    font-size: 25px;
+
+.subtitle {
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-weight: 300;
+    line-height: 46px;
+    margin-bottom: 25px;
+    font-size: 36px;
     margin-bottom: 10px;
     padding-bottom: 0
 }
 
-.paraTitle{
-    font-family:Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+.paraTitle {
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
     font-size: 18px;
     // text-decoration: underline;
-    margin-top:30px;
-
+    margin-top: 30px;
 }
-body{
+
+body {
     background-color: rgba(0, 0, 0, 0)
 }
 
-.mainContainer{
+.mainContainer {
     margin-top: 3%
 }
-
 
 .inline-icon {
     vertical-align: bottom;
     font-size: 25px !important;
- }
+}
