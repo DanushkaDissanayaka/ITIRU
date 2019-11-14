@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {DatesService} from '../../service/dates.service'
 
 @Component({
   selector: 'app-important-dates',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ImportantDatesComponent implements OnInit {
 
-  constructor() { }
+  constructor(public _dateService:DatesService) { }
 
   ngOnInit() {
+    console.log(this._dateService.Papersubmissiondeadline);
   }
 
 }
