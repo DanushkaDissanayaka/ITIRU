@@ -19,6 +19,7 @@ import {AccommodationComponent} from './accommodation-or-travel/accommodation/ac
 import {TravelComponent} from './accommodation-or-travel/travel/travel.component';
 import {Workshop1Component} from './workshop/workshop1/workshop1.component';
 import {Workshop2Component} from './workshop/workshop2/workshop2.component';
+import {DetailsProgramComponent} from './details-program/details-program.component';
 
 
 
@@ -95,6 +96,10 @@ const routes: Routes = [
   {
     path: 'workshop2',
     component: Workshop2Component
+  },
+  {
+    path:'detailsProgram',
+    component:DetailsProgramComponent
   }
 ];
 

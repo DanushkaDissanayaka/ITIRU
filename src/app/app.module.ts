@@ -27,6 +27,8 @@ import { AccommodationComponent } from './accommodation-or-travel/accommodation/
 import { WorkshopComponent } from './workshop/workshop.component';
 import { Workshop1Component } from './workshop/workshop1/workshop1.component';
 import { Workshop2Component } from './workshop/workshop2/workshop2.component';
+import { DetailsProgramComponent } from './details-program/details-program.component';
+import { TableComponent } from './details-program/table/table.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +56,9 @@ import { Workshop2Component } from './workshop/workshop2/workshop2.component';
     AccommodationComponent,
     WorkshopComponent,
     Workshop1Component,
-    Workshop2Component
+    Workshop2Component,
+    DetailsProgramComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
