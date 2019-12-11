@@ -63,14 +63,26 @@
 <div class="container">
     <div class="span12 pagination-centered">
         <div class="row">
+            <p style="font-size: 22px; text-decoration: underline;">Golden Sponsors</p>
             <div id="small-img" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
                 <ul>
-                    <li *ngFor="let soposer of FinanciallySponsers">
+                    <li *ngFor="let soposer of goldSponsers">
                         <img [src]="soposer" class="img-responsive inline-block" alt="Responsive image" />
                     </li>
                 </ul>
             </div>
         </div>
+
+        <div class="row">
+                <p style="font-size: 22px;">Silver Sponsors</p>
+                <div id="small-img" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
+                    <ul>
+                        <li *ngFor="let soposer of silverSponsers">
+                            <img [src]="soposer" class="img-responsive inline-block" alt="Responsive image" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
         <h3 class="subtitle">News</h3>
         <hr>
 

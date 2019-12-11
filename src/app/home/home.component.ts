@@ -9,9 +9,9 @@ import { getLocaleEraNames } from '@angular/common';
 })
 export class HomeComponent implements OnInit {
 
-  FinanciallySponsers: Array<String> = [
+  goldSponsers: Array<String> = [
     "assets/financialSponsers/ifs.jpg",
-
+    "assets/financialSponsers/BOC_Logo.png",
   ]
 
   organise: Array<String> = [
@@ -19,11 +19,9 @@ export class HomeComponent implements OnInit {
     "assets/organizeBy/logoUoM.png",
   ]
 
-  technicalCoSponsers: Array<String> = [
-    "assets/technicallySponser/IEEE_logo.png",
-    "assets/technicallySponser/IEEE_SL_logo.png",
-    "assets/technicallySponser/RA_logo.png",
-
+  silverSponsers: Array<String> = [
+    "assets/financialSponsers/Mobitel_logo.png",
+    "assets/financialSponsers/softLogic_logo.jpg",
   ]
 
   news1: NewsCardModel;
